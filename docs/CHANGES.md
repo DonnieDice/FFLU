@@ -1,1 +1,1 @@
-- Updated release.yml
+- Re-added Vanilla toc
