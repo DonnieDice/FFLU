@@ -1,3 +1,1 @@
-- Removed un-needed toc files
-- Added all versions to single toc
-- Updated .gitignore
+- Updated release.yml

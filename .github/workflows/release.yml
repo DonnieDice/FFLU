@@ -42,45 +42,33 @@ jobs:
       - name: Extract Version from TOC
         id: extract_version
         run: |
-          version=$(grep -oP '^## Version: \K(.*)' ./*.toc)
+          # Try to get version from TOC file, fallback to tag name
+          if [ -f "FFLU.toc" ]; then
+            version=$(grep -E "^## Version:" FFLU.toc | awk '{print $3}')
+            if [ -z "$version" ]; then
+              version="${{ github.ref_name }}"
+            fi
+          else
+            version="${{ github.ref_name }}"
+          fi
+          echo "Extracted version: $version"
           echo "version=$version" >> $GITHUB_OUTPUT
+
+      - name: Extract Changelog
+        id: extract_changelog
+        run: |
+          if [ -f "docs/CHANGES.md" ]; then
+            # Read the changelog and properly escape it for JSON
+            CHANGELOG=$(cat docs/CHANGES.md | head -20 | jq -Rs .)
+            echo "changelog=$CHANGELOG" >> $GITHUB_OUTPUT
+          else
+            echo "changelog=\"No changelog available\"" >> $GITHUB_OUTPUT
+          fi
 
       - name: Package and Release
         uses: BigWigsMods/packager@master
         with:
           release-type: ${{ steps.set_release_type.outputs.release_type }}
-
-      - name: Extract Changelog
-        id: extract_changelog
-        run: |
-          # Extract the current version's changelog from docs/CHANGES.md
-          # We need to find the section between the current version header and the next version header or EOF
-          VERSION="${{ steps.extract_version.outputs.version }}"
-          
-          # Read the changelog and extract the current version's content
-          CHANGELOG=$(awk -v version="$VERSION" '
-            BEGIN { found = 0; content = "" }
-            /^## Version/ {
-              if ($3 == version) {
-                found = 1
-                next
-              } else if (found) {
-                exit
-              }
-            }
-            found && /^---/ { exit }
-            found { content = content $0 "\n" }
-            END { print content }
-          ' docs/CHANGES.md)
-          
-          # Escape special characters for JSON
-          CHANGELOG="${CHANGELOG//$'\n'/\\n}"
-          CHANGELOG="${CHANGELOG//\"/\\\"}"
-          
-          # Save to output
-          echo "changelog<<EOF" >> $GITHUB_OUTPUT
-          echo "$CHANGELOG" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Send Discord Notification
         if: success()
@@ -96,53 +84,129 @@ jobs:
           RELEASE_TYPE="${{ steps.set_release_type.outputs.release_type }}"
           if [ "$RELEASE_TYPE" = "alpha" ]; then
             EMOJI="🔬"
-            COLOR="16711680"  # Red
-            TYPE_TEXT="Alpha"
+            TYPE_TEXT=" Alpha"
+            COLOR=16711680
           elif [ "$RELEASE_TYPE" = "beta" ]; then
             EMOJI="🧪"
-            COLOR="16744448"  # Orange
-            TYPE_TEXT="Beta"
+            TYPE_TEXT=" Beta"
+            COLOR=16744448
           else
-            EMOJI="🚀"
-            COLOR="16768000"  # Yellow/Gold for FFLU
-            TYPE_TEXT="Release"
+            EMOJI="🎵"
+            TYPE_TEXT=""
+            COLOR=16768000
           fi
           
-          # Format the changelog for Discord
-          CHANGELOG="${{ steps.extract_changelog.outputs.changelog }}"
+          # Get version - use tag name as fallback
+          VERSION="${{ steps.extract_version.outputs.version }}"
+          if [ -z "$VERSION" ]; then
+            VERSION="${{ github.ref_name }}"
+          fi
           
-          # Create the Discord embed
-          DISCORD_PAYLOAD=$(cat <<EOF
-          {
-            "embeds": [{
-              "title": "$EMOJI FFLU v${{ steps.extract_version.outputs.version }} $TYPE_TEXT",
-              "description": "A new version of Final Fantasy Level-Up! has been released!",
-              "color": $COLOR,
-              "fields": [
-                {
-                  "name": "📝 Changelog",
-                  "value": "$CHANGELOG"
+          # Get the changelog (already JSON-escaped from previous step)
+          CHANGELOG='${{ steps.extract_changelog.outputs.changelog }}'
+          
+          # Build the JSON payload using jq for proper escaping
+          JSON_PAYLOAD=$(jq -n \
+            --arg emoji "$EMOJI" \
+            --arg type_text "$TYPE_TEXT" \
+            --arg version "$VERSION" \
+            --arg tag "${{ github.ref_name }}" \
+            --argjson changelog "$CHANGELOG" \
+            --argjson color "$COLOR" \
+            '{
+              "content": "",
+              "username": "FFLU Release",
+              "avatar_url": "https://raw.githubusercontent.com/donniedice/FFLU/main/images/logo.png",
+              "embeds": [{
+                "title": "\($emoji) FFLU | Final Fantasy Level-Up! - \($version)\($type_text)",
+                "description": "**Victory Fanfare!** A new version of FFLU has been released!\n\n🎵 **What'\''s New:**\n\($changelog)\n\n**Experience the iconic Final Fantasy victory fanfare when you level up!**",
+                "url": "https://github.com/donniedice/FFLU/releases/tag/\($tag)",
+                "color": $color,
+                "thumbnail": {
+                  "url": "https://raw.githubusercontent.com/donniedice/FFLU/main/images/logo.png"
                 },
-                {
-                  "name": "📦 Download",
-                  "value": "[CurseForge](https://www.curseforge.com/wow/addons/fflu) • [WoWInterface](https://www.wowinterface.com/downloads/info26252-FFLU.html) • [Wago](https://addons.wago.io/addons/fflu) • [GitHub](https://github.com/donniedice/FFLU/releases/tag/${{ github.ref_name }})"
-                }
-              ],
-              "footer": {
-                "text": "RGX Mods Collection",
-                "icon_url": "https://raw.githubusercontent.com/donniedice/FFLU/main/images/icon.png"
-              },
-              "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.000Z)",
-              "thumbnail": {
-                "url": "https://raw.githubusercontent.com/donniedice/FFLU/main/images/logo.png"
-              }
-            }]
-          }
-          EOF
-          )
+                "fields": [
+                  {
+                    "name": "📥 Downloads",
+                    "value": "[CurseForge](https://www.curseforge.com/wow/addons/fflu)\n[WoWInterface](https://www.wowinterface.com/downloads/info26252)\n[Wago.io](https://addons.wago.io/addons/fflu)\n[GitHub](https://github.com/donniedice/FFLU)",
+                    "inline": true
+                  },
+                  {
+                    "name": "🎮 Compatibility",
+                    "value": "✅ The War Within\n✅ Classic Era\n✅ Cataclysm\n✅ MoP",
+                    "inline": true
+                  },
+                  {
+                    "name": "💬 Support",
+                    "value": "[Join Discord](https://discord.gg/N7kdKAHVVF)\n[Report Issues](https://github.com/donniedice/FFLU/issues)",
+                    "inline": true
+                  }
+                ],
+                "footer": {
+                  "text": "RGX Mods - RealmGX Community",
+                  "icon_url": "https://raw.githubusercontent.com/donniedice/SimpleQuestPlates/main/images/kiwi.gif"
+                },
+                "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%S.000Z)'"
+              }]
+            }')
+          
+          echo "Sending Discord notification..."
+          echo "Version: $VERSION"
           
           # Send to Discord
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d "$DISCORD_PAYLOAD" \
+               -d "$JSON_PAYLOAD" \
+               "$DISCORD_WEBHOOK"
+
+      - name: Send Discord Failure Notification
+        if: failure()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "Discord webhook not configured, skipping notification"
+            exit 0
+          fi
+          
+          VERSION="${{ steps.extract_version.outputs.version }}"
+          if [ -z "$VERSION" ]; then
+            VERSION="Unknown"
+          fi
+          
+          JSON_PAYLOAD=$(jq -n \
+            --arg version "$VERSION" \
+            --arg run_id "${{ github.run_id }}" \
+            '{
+              "content": "",
+              "username": "FFLU Build Failed",
+              "avatar_url": "https://raw.githubusercontent.com/donniedice/FFLU/main/images/logo.png",
+              "embeds": [{
+                "title": "❌ FFLU Build Failed",
+                "description": "The release workflow encountered an error",
+                "url": "https://github.com/donniedice/FFLU/actions/runs/\($run_id)",
+                "color": 15158332,
+                "fields": [
+                  {
+                    "name": "Version",
+                    "value": $version,
+                    "inline": true
+                  },
+                  {
+                    "name": "Workflow",
+                    "value": "[View Logs](https://github.com/donniedice/FFLU/actions/runs/\($run_id))",
+                    "inline": true
+                  }
+                ],
+                "footer": {
+                  "text": "RGX Mods - Build System",
+                  "icon_url": "https://raw.githubusercontent.com/donniedice/SimpleQuestPlates/main/images/kiwi.gif"
+                },
+                "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%S.000Z)'"
+              }]
+            }')
+          
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "$JSON_PAYLOAD" \
                "$DISCORD_WEBHOOK"
