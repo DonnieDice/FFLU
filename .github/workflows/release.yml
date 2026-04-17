@@ -116,19 +116,19 @@ jobs:
             '{
               "content": "",
               "username": "FFLU Release",
-              "avatar_url": "https://raw.githubusercontent.com/donniedice/FFLU/main/images/logo.png",
+              "avatar_url": "https://raw.githubusercontent.com/donniedice/FinalFantasyLevelUp/main/images/logo.png",
               "embeds": [{
                 "title": "\($emoji) FFLU | Final Fantasy Level-Up! - \($version)\($type_text)",
                 "description": "**Victory Fanfare!** A new version of FFLU has been released!\n\n🎵 **What'\''s New:**\n\($changelog)\n\n**Experience the iconic Final Fantasy victory fanfare when you level up!**",
-                "url": "https://github.com/donniedice/FFLU/releases/tag/\($tag)",
+                "url": "https://github.com/donniedice/FinalFantasyLevelUp/releases/tag/\($tag)",
                 "color": $color,
                 "thumbnail": {
-                  "url": "https://raw.githubusercontent.com/donniedice/FFLU/main/images/logo.png"
+                  "url": "https://raw.githubusercontent.com/donniedice/FinalFantasyLevelUp/main/images/logo.png"
                 },
                 "fields": [
                   {
                     "name": "📥 Downloads",
-                    "value": "[CurseForge](https://www.curseforge.com/wow/addons/fflu)\n[WoWInterface](https://www.wowinterface.com/downloads/info26252)\n[Wago.io](https://addons.wago.io/addons/fflu)\n[GitHub](https://github.com/donniedice/FFLU)",
+                    "value": "[CurseForge](https://www.curseforge.com/wow/addons/fflu)\n[WoWInterface](https://www.wowinterface.com/downloads/info26252)\n[Wago.io](https://addons.wago.io/addons/fflu)\n[GitHub](https://github.com/donniedice/FinalFantasyLevelUp)",
                     "inline": true
                   },
                   {
@@ -138,7 +138,7 @@ jobs:
                   },
                   {
                     "name": "💬 Support",
-                    "value": "[Join Discord](https://discord.gg/N7kdKAHVVF)\n[Report Issues](https://github.com/donniedice/FFLU/issues)",
+                    "value": "[Join Discord](https://discord.gg/N7kdKAHVVF)\n[Report Issues](https://github.com/donniedice/FinalFantasyLevelUp/issues)",
                     "inline": true
                   }
                 ],
@@ -180,11 +180,11 @@ jobs:
             '{
               "content": "",
               "username": "FFLU Build Failed",
-              "avatar_url": "https://raw.githubusercontent.com/donniedice/FFLU/main/images/logo.png",
+              "avatar_url": "https://raw.githubusercontent.com/donniedice/FinalFantasyLevelUp/main/images/logo.png",
               "embeds": [{
                 "title": "❌ FFLU Build Failed",
                 "description": "The release workflow encountered an error",
-                "url": "https://github.com/donniedice/FFLU/actions/runs/\($run_id)",
+                "url": "https://github.com/donniedice/FinalFantasyLevelUp/actions/runs/\($run_id)",
                 "color": 15158332,
                 "fields": [
                   {
@@ -194,7 +194,7 @@ jobs:
                   },
                   {
                     "name": "Workflow",
-                    "value": "[View Logs](https://github.com/donniedice/FFLU/actions/runs/\($run_id))",
+                    "value": "[View Logs](https://github.com/donniedice/FinalFantasyLevelUp/actions/runs/\($run_id))",
                     "inline": true
                   }
                 ],
