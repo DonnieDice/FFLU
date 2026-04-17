@@ -1,11 +1,11 @@
-# <img src="images/logo.png" width="25" height="25"> <span style="color:#ffe568">F</span><span style="color:#ffe568">F</span><span style="color:#ffe568">L</span><span style="color:#ffe568">U</span> <span style="color:#fff">|</span> <span style="color:#ffe568">F</span><span style="color:#fff">inal </span><span style="color:#ffe568">F</span><span style="color:#fff">antasy </span><span style="color:#ffe568">L</span><span style="color:#fff">evel-</span><span style="color:#ffe568">U</span><span style="color:#fff">p!</span>
+# <img src="images/logo.png" width="25" height="25"> <span style="color:#ffe568">F</span><span style="color:#ffe568">F</span><span style="color:#ffe568">L</span><span style="color:#ffe568">U</span> <span style="color:#fff">|</span> <span style="color:#ffe568">F</span><span style="color:#fff">inal </span><span style="color:#ffe568">F</span><span style="color:#fff">antasy </span><span style="color:#ffe568">L</span><span style="color:#fff">evel-</span><span style="color:#ffe568">U</span><span style="color:#fff">p</span><span style="color:#ffe568">!</span>
 ## <img src="https://raw.githubusercontent.com/donniedice/SimpleQuestPlates/main/images/kiwi.gif" height="20"> <span style="color:#8B1538">R</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Mods</span> <span style="color:#3598db">-</span> [<span style="color:#8B1538">R</span><span style="color:#7598b6">ealm</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span>](https://realmgx.com) <span style="color:#ffe568">Community Project</span>
 
 <div align="center">
 
 <img src="images/logo.png" alt="FFLU Logo" width="200">
 
-[![FFLU](https://img.shields.io/badge/FFLU-Final%20Fantasy%20Level%20Up!-ffe568?style=for-the-badge&logo=github&logoColor=white)](https://github.com/donniedice/FinalFantasyLevelUp)
+[![FFLU](https://img.shields.io/badge/FFLU-Final%20Fantasy%20Level%20Up!-ffe568?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DonnieDice/FFLU)
 [![RGX Mods](https://img.shields.io/badge/RGX-Mods%20Collection-8B1538?style=for-the-badge&logo=github&logoColor=white)](https://discord.gg/N7kdKAHVVF)
 
 ### <span style="color:#ffe568">🌟 Join the </span> <span style="color:#8B1538">R</span><span style="color:#7598b6">ealm</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Community</span> <span style="color:#3598db">-</span> <span style="color:#8B1538">G</span><span style="color:#7598b6">amers e</span><span style="color:#8B1538">X</span><span style="color:#7598b6">treme!</span> <span style="color:#ffe568">🌟</span>
@@ -15,20 +15,20 @@
 
 **<span style="color:#ffe568">F</span><span style="color:#ffe568">F</span><span style="color:#ffe568">L</span><span style="color:#ffe568">U</span> <span style="color:#e67e23">is a professional</span> <span style="color:#06c">World of Warcraft</span> <span style="color:#e67e23">addon that transforms your leveling experience with the iconic Final Fantasy level-up sound — across all WoW versions.</span>**
 
-**<span style="color:#ffe568">🎮 </span> <span style="color:#e67e23">Connect with fellow gamers, get support, and be part of the</span> <span style="color:#8B1538">R</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Mods</span> <span style="color:#e67e23">family!</span>**
+**<img src="https://raw.githubusercontent.com/donniedice/SimpleQuestPlates/main/images/kiwi.gif" width="18" height="18"> <span style="color:#e67e23">Connect with fellow gamers, get support, and be part of the</span> <span style="color:#8B1538">R</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Mods</span> <span style="color:#e67e23">family!</span>**
 
 ---
 
 <!-- GitHub Stats & Badges -->
-[![GitHub release](https://img.shields.io/github/v/release/donniedice/FinalFantasyLevelUp?style=for-the-badge&logo=github&color=success)](https://github.com/donniedice/FinalFantasyLevelUp/releases)
-[![GitHub stars](https://img.shields.io/github/stars/donniedice/FinalFantasyLevelUp?style=for-the-badge&logo=github&color=yellow)](https://github.com/donniedice/FinalFantasyLevelUp/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/donniedice/FinalFantasyLevelUp?style=for-the-badge&logo=github&color=blue)](https://github.com/donniedice/FinalFantasyLevelUp/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/donniedice/FinalFantasyLevelUp?style=for-the-badge&logo=github&color=red)](https://github.com/donniedice/FinalFantasyLevelUp/issues)
-[![GitHub license](https://img.shields.io/github/license/donniedice/FinalFantasyLevelUp?style=for-the-badge&logo=github&color=lightgrey)](https://github.com/donniedice/FinalFantasyLevelUp/blob/main/LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/DonnieDice/FFLU?style=for-the-badge&logo=github&color=success)](https://github.com/DonnieDice/FFLU/releases)
+[![GitHub stars](https://img.shields.io/github/stars/DonnieDice/FFLU?style=for-the-badge&logo=github&color=yellow)](https://github.com/DonnieDice/FFLU/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/DonnieDice/FFLU?style=for-the-badge&logo=github&color=blue)](https://github.com/DonnieDice/FFLU/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/DonnieDice/FFLU?style=for-the-badge&logo=github&color=red)](https://github.com/DonnieDice/FFLU/issues)
+[![GitHub license](https://img.shields.io/github/license/DonnieDice/FFLU?style=for-the-badge&logo=github&color=lightgrey)](https://github.com/DonnieDice/FFLU/blob/main/LICENSE)
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/donniedice/FinalFantasyLevelUp?style=flat-square&logo=github)](https://github.com/donniedice/FinalFantasyLevelUp/commits/main)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/donniedice/FinalFantasyLevelUp?style=flat-square&logo=github)](https://github.com/donniedice/FinalFantasyLevelUp/graphs/contributors)
-[![GitHub repo size](https://img.shields.io/github/repo-size/donniedice/FinalFantasyLevelUp?style=flat-square&logo=github)](https://github.com/donniedice/FinalFantasyLevelUp)
+[![GitHub last commit](https://img.shields.io/github/last-commit/DonnieDice/FFLU?style=flat-square&logo=github)](https://github.com/DonnieDice/FFLU/commits/main)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/DonnieDice/FFLU?style=flat-square&logo=github)](https://github.com/DonnieDice/FFLU/graphs/contributors)
+[![GitHub repo size](https://img.shields.io/github/repo-size/DonnieDice/FFLU?style=flat-square&logo=github)](https://github.com/DonnieDice/FFLU)
 
 <!-- Platform Badges -->
 [![CurseForge](https://img.shields.io/badge/CurseForge-Downloads-orange?style=flat-square&logo=curseforge)](https://www.curseforge.com/wow/addons/fflu)
@@ -75,6 +75,7 @@
 
 ---
 
+<a id="support"></a>
 ## <span style="color:#ffe568">💖 Support </span> <span style="color:#8B1538">R</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Mods</span>
 
 <div align="center">
@@ -84,7 +85,7 @@
 | | |
 |---|---|
 | [![Donate](https://img.shields.io/badge/Donate-CashApp-00C853?style=for-the-badge&logo=cash-app&logoColor=white)](https://bit.ly/3fyxxSU) | [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/donniedice) |
-| [![GitHub Sponsor](https://img.shields.io/badge/Sponsor-GitHub-ff69b4?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/donniedice) | [![Star](https://img.shields.io/badge/⭐-Star%20this%20repository-yellow?style=for-the-badge&logo=github)](https://github.com/donniedice/FinalFantasyLevelUp) |
+| [![GitHub Sponsor](https://img.shields.io/badge/Sponsor-GitHub-ff69b4?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/donniedice) | [![Star](https://img.shields.io/badge/⭐-Star%20this%20repository-yellow?style=for-the-badge&logo=github)](https://github.com/DonnieDice/FFLU) |
 
 _<span style="color:#e67e23">Every donation helps fund new features and improvements!</span>_
 
@@ -94,10 +95,10 @@ _<span style="color:#e67e23">Every donation helps fund new features and improvem
 
 ## <span style="color:#ffe568">🎯 What is FFLU?</span>
 
-**<span style="color:#ffe568">F</span><span style="color:#ffe568">F</span><span style="color:#ffe568">L</span><span style="color:#ffe568">U</span> <span style="color:#fff">|</span> <span style="color:#ffe568">F</span><span style="color:#fff">inal </span><span style="color:#ffe568">F</span><span style="color:#fff">antasy </span><span style="color:#ffe568">L</span><span style="color:#fff">evel-</span><span style="color:#ffe568">U</span><span style="color:#fff">p!</span>** <span style="color:#e67e23">is the ultimate</span> <span style="color:#8B1538">R</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Mods</span> <span style="color:#e67e23">creation for bringing that triumphant</span> **<span style="color:#ffe568">"Victory Fanfare!"</span>** <span style="color:#e67e23">feeling from Final Fantasy directly into your</span> <span style="color:#06c">World of Warcraft</span> <span style="color:#e67e23">experience. No more bland WoW level-up sounds — now you get the legendary fanfare that made every Final Fantasy level-up feel like a true victory!</span>
+**<span style="color:#ffe568">F</span><span style="color:#ffe568">F</span><span style="color:#ffe568">L</span><span style="color:#ffe568">U</span> <span style="color:#fff">|</span> <span style="color:#ffe568">F</span><span style="color:#fff">inal </span><span style="color:#ffe568">F</span><span style="color:#fff">antasy </span><span style="color:#ffe568">L</span><span style="color:#fff">evel-</span><span style="color:#ffe568">U</span><span style="color:#fff">p</span><span style="color:#ffe568">!</span>** <span style="color:#e67e23">is the ultimate</span> <span style="color:#8B1538">R</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Mods</span> <span style="color:#e67e23">creation for bringing that triumphant</span> **<span style="color:#ffe568">"Victory Fanfare!"</span>** <span style="color:#e67e23">feeling from Final Fantasy directly into your</span> <span style="color:#06c">World of Warcraft</span> <span style="color:#e67e23">experience. No more bland WoW level-up sounds — now you get the legendary fanfare that made every Final Fantasy level-up feel like a true victory!</span>
 
 ### <span style="color:#ffe568">🔥 Why Choose FFLU?</span>
-- **<span style="color:#2dc26b">🎮 RGX Quality:</span>** <span style="color:#e67e23">Built by the RealmGX community with passion</span>
+- **<img src="https://raw.githubusercontent.com/donniedice/SimpleQuestPlates/main/images/kiwi.gif" width="16" height="16"> <span style="color:#8B1538">R</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Quality</span><span style="color:#3598db">:</span>** <span style="color:#e67e23">Built by the</span> <span style="color:#8B1538">R</span><span style="color:#7598b6">ealm</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#e67e23">community with passion</span>
 - **<span style="color:#ffe568">🌍 Multi-Language:</span>** <span style="color:#e67e23">Supports English, Russian, German, French, and Spanish</span>
 - **<span style="color:#b96ad9">🛠️ Professional Standards:</span>** <span style="color:#e67e23">Modern WoW addon architecture</span>
 - **<span style="color:#4ecdc4">🎯 Cross-Compatible:</span>** <span style="color:#e67e23">Works across all WoW versions</span>
@@ -105,6 +106,7 @@ _<span style="color:#e67e23">Every donation helps fund new features and improvem
 
 ---
 
+<a id="features"></a>
 ## <span style="color:#ffe568">✨ Features</span>
 
 <div align="center">
@@ -143,7 +145,7 @@ _<span style="color:#e67e23">Every donation helps fund new features and improvem
 </td>
 <td width="50%" valign="top">
 
-### <span style="color:#4ecdc4">🎮 WoW Compatibility</span>
+## <span style="color:#4ecdc4">🎮 WoW Compatibility</span>
 - **<span style="color:#2dc26b">The War Within</span>** (Retail)
 - **<span style="color:#ffe568">Classic Era</span>**
 - **<span style="color:#58be81">Cataclysm Classic</span>**
@@ -159,6 +161,7 @@ _<span style="color:#e67e23">Every donation helps fund new features and improvem
 
 ---
 
+<a id="quick-start"></a>
 ## <span style="color:#ffe568">🚀 Quick Start</span>
 
 1. **<span style="color:#2dc26b">Install</span>** <span style="color:#ffe568">F</span><span style="color:#ffe568">F</span><span style="color:#ffe568">L</span><span style="color:#ffe568">U</span> <span style="color:#e67e23">from your preferred platform</span>
@@ -169,6 +172,7 @@ _<span style="color:#e67e23">Every donation helps fund new features and improvem
 
 ---
 
+<a id="command-reference"></a>
 ## <span style="color:#ffe568">📋 Command Reference</span>
 
 <span style="color:#e67e23">Use</span> <span style="color:#2dc26b">`/fflu`</span> <span style="color:#e67e23">followed by</span><span style="color:#3598db">:</span>
@@ -189,6 +193,7 @@ _<span style="color:#e67e23">Every donation helps fund new features and improvem
 
 ---
 
+<a id="compatibility"></a>
 ## <span style="color:#ffe568">📋 Compatibility</span>
 
 <div align="center">
@@ -206,13 +211,14 @@ _<span style="color:#e67e23">Every donation helps fund new features and improvem
 
 ---
 
+<a id="installation"></a>
 ## <span style="color:#ffe568">📥 Installation</span>
 
 1. **<span style="color:#2dc26b">Download</span>** <span style="color:#e67e23">from your preferred platform</span><span style="color:#3598db">:</span>
    - [<span style="color:#ff6b6b">CurseForge</span>](https://www.curseforge.com/wow/addons/fflu) _(Recommended)_
    - [<span style="color:#b96ad9">Wago.io</span>](https://addons.wago.io/addons/fflu)
    - [<span style="color:#4ecdc4">WoWInterface</span>](https://www.wowinterface.com/downloads/info26252)
-   - [<span style="color:#24292e">GitHub</span>](https://github.com/donniedice/FinalFantasyLevelUp/releases)
+   - [<span style="color:#24292e">GitHub</span>](https://github.com/DonnieDice/FFLU/releases)
 
 2. **<span style="color:#4ecdc4">Extract</span>** <span style="color:#e67e23">to your</span> <span style="color:#06c">WoW</span> <span style="color:#e67e23">AddOns directory</span><span style="color:#3598db">:</span>
    - <span style="color:#e67e23">**Retail**: `World of Warcraft/_retail_/Interface/AddOns`</span>
@@ -225,8 +231,7 @@ _<span style="color:#e67e23">Every donation helps fund new features and improvem
 
 ## <span style="color:#ffe568">🆕 What's New in v2.1.18</span>
 
-<details>
-<summary><strong><span style="color:#ffe568">🎉 Click to see the latest updates!</span></strong></summary>
+<span style="color:#ffe568">🎉 Click to see the latest updates!</span>
 
 ### <span style="color:#4ecdc4">🆕 Major Updates</span>
 - <span style="color:#2dc26b">✅ **Simplified command structure**</span> <span style="color:#e67e23">— direct sound selection</span>
@@ -248,7 +253,6 @@ _<span style="color:#e67e23">Every donation helps fund new features and improvem
 - <span style="color:#ffe568">✅ **SavedVariables timing problems**</span>
 - <span style="color:#ff6b6b">✅ **Race condition protection**</span>
 
-</details>
 
 ---
 
@@ -284,7 +288,7 @@ volume = "Master"        -- Volume channel
 
 ## <span style="color:#ffe568">🐛 Known Issues</span>
 
-- <span style="color:#e67e23">No known issues at this time. Report any problems via</span> [<span style="color:#ff6b6b">GitHub Issues</span>](https://github.com/donniedice/FinalFantasyLevelUp/issues) <span style="color:#e67e23">or our</span> [<span style="color:#7289da">Discord</span>](https://discord.gg/N7kdKAHVVF)<span style="color:#e67e23">.</span>
+- <span style="color:#e67e23">No known issues at this time. Report any problems via</span> [<span style="color:#ff6b6b">GitHub Issues</span>](https://github.com/DonnieDice/FFLU/issues) <span style="color:#e67e23">or our</span> [<span style="color:#7289da">Discord</span>](https://discord.gg/N7kdKAHVVF)<span style="color:#e67e23">.</span>
 
 ---
 
@@ -302,14 +306,14 @@ volume = "Master"        -- Volume channel
 
 **<span style="color:#ff6b6b">Still having trouble?</span>**
 - <span style="color:#e67e23">Join our</span> [<span style="color:#7289da">Discord</span>](https://discord.gg/N7kdKAHVVF) <span style="color:#e67e23">for instant support</span>
-- <span style="color:#e67e23">Open a</span> [<span style="color:#ff6b6b">GitHub Issue</span>](https://github.com/donniedice/FinalFantasyLevelUp/issues)
+- <span style="color:#e67e23">Open a</span> [<span style="color:#ff6b6b">GitHub Issue</span>](https://github.com/DonnieDice/FFLU/issues)
 
 ---
 
 ## <span style="color:#ffe568">🤝 Contributing</span>
 
 <span style="color:#e67e23">Contributions are welcome! Feel free to</span><span style="color:#3598db">:</span>
-- <span style="color:#2dc26b">🐛 **Report bugs**</span> <span style="color:#e67e23">via</span> [<span style="color:#b96ad9">GitHub Issues</span>](https://github.com/donniedice/FinalFantasyLevelUp/issues)
+- <span style="color:#2dc26b">🐛 **Report bugs**</span> <span style="color:#e67e23">via</span> [<span style="color:#b96ad9">GitHub Issues</span>](https://github.com/DonnieDice/FFLU/issues)
 - <span style="color:#ff6b6b">💡 **Suggest features**</span> <span style="color:#e67e23">in our</span> [<span style="color:#7289da">Discord</span>](https://discord.gg/N7kdKAHVVF)
 - <span style="color:#4ecdc4">🌍 **Help with translations**</span> <span style="color:#e67e23">for global players</span>
 - <span style="color:#2dc26b">⭐ **Star the repository**</span> <span style="color:#e67e23">to show your support</span>
@@ -318,7 +322,7 @@ volume = "Master"        -- Volume channel
 
 ## <span style="color:#ffe568">📄 License</span>
 
-<span style="color:#e67e23">This project is licensed under the</span> [<span style="color:#2dc26b">MIT License</span>](https://github.com/donniedice/FinalFantasyLevelUp/blob/main/LICENSE)<span style="color:#e67e23">.</span>
+<span style="color:#e67e23">This project is licensed under the</span> [<span style="color:#2dc26b">MIT License</span>](https://github.com/DonnieDice/FFLU/blob/main/LICENSE)<span style="color:#e67e23">.</span>
 
 ---
 
@@ -343,6 +347,6 @@ _<span style="color:#e67e23">"May your levels be swift and your fanfares be lege
 
 [<span style="color:#05dffa">BLU</span>](https://github.com/donniedice/BLU) | [<span style="color:#05dffa">BLU Classic</span>](https://github.com/donniedice/BLU_Classic) | [<span style="color:#9b59b6">CCU</span>](https://github.com/donniedice/CoordinationCloakUtility) | [<span style="color:#58be81">PetBuddy2</span>](https://github.com/donniedice/PetBuddy2) | [<span style="color:#e74c3c">RND</span>](https://github.com/donniedice/remove_nameplate_debuffs) | [<span style="color:#58be81">SQP</span>](https://github.com/donniedice/SimpleQuestPlates) | [<span style="color:#8B4513">SRLU</span>](https://github.com/donniedice/SRLU)
 
-**<span style="color:#8B1538">🎮</span> <span style="color:#8B1538">R</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Mods</span> <span style="color:#3598db">-</span> <span style="color:#e67e23">Powered by</span> [<span style="color:#8B1538">R</span><span style="color:#7598b6">ealm</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span>](https://realmgx.com) <span style="color:#e67e23">Community</span>**
+**<img src="https://raw.githubusercontent.com/donniedice/SimpleQuestPlates/main/images/kiwi.gif" width="18" height="18"> <span style="color:#8B1538">R</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span> <span style="color:#4ecdc4">Mods</span> <span style="color:#3598db">-</span> <span style="color:#e67e23">Powered by</span> [<span style="color:#8B1538">R</span><span style="color:#7598b6">ealm</span><span style="color:#8B1538">G</span><span style="color:#8B1538">X</span>](https://realmgx.com) <span style="color:#e67e23">Community</span>**
 
 </div>
