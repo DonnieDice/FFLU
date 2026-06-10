@@ -1,0 +1,20 @@
+# IDE files
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# WoW-specific backup files
+*.lua.bak
+*.toc.bak
+
+# Release packaging
+.release/
+packages/
+*.zip
+
+# User-specific files
+.env
+.claude/

@@ -1,0 +1,22 @@
+package-as: FinalFantasyLevelUp
+manual-changelog: docs/CHANGES.md
+
+enable-nolib-creation: no
+
+move-folders:
+  FinalFantasyLevelUp/FFLU: FinalFantasyLevelUp
+
+ignore:
+  - .gitignore
+  - .github
+  - README.md
+  - CLAUDE.md
+
+plain-copy:
+  - images/logo.png
+
+manual-changelog:
+  filename: docs/CHANGES.md
+  markup-type: markdown
+
+license-output: LICENSE
